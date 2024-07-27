@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Solar Panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Solar Farm</h1>
+        <section id="formContainer">
+            <h2 id="formHeading">Add A Solar Panel</h2>
+            <div id="error">
+            </div>
+            <form onsubmit="handleSubmit(event)" id="form">
+                <fieldset class="form-group">
+                    <label for="section">Section:</label>
+                    <input type="text" id="section" class="form-control" name="section">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="row">Row:</label>
+                    <input type="number" id="row" class="form-control" name="row">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="column">Column:</label>
+                    <input type="number" id="column" class="form-control" name="column">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="yearInstalled">Year Installed:</label>
+                    <input type="number" id="yearInstalled" class="form-control" name="yearInstalled">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="material">Material:</label>
+                    <select name="material" id="material" class="form-control">
+                        <option value="POLY_SI">POLY_SI</option>
+                        <option value="MONO_SI">MONO_SI</option>
+                        <option value="A_SI">A_SI</option>
+                        <option value="CD_TE">CD_TE</option>
+                        <option value="CIGS">CIGS</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="tracking">Is Tracking?:</label>
+                    <input type="checkbox" id="tracking" class="form-control" name="tracking">
+                </fieldset>
+                <button class="btn btn-primary" type="submit" id="formSubmitButton"> Submit </button>
+                <button class="btn btn-danger" type="button" onclick="resetState"> Cancel</button>
+            </form>
+        </section>
+        <section id="listContainer">
+            <h2>Solar Panels</h2>
+            <button class="btn btn-dark" onclick="handleAddPanel"> Add A Solar Panel</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Row-Column</th>
+                        <th>Year Installed</th>
+                        <th>Material</th>
+                        <th>Is Tracking</th>
+                        <th>&nbsp;</th> <!-- space -->
+                    </tr>
+                </thead>
+                <tbody id="tableRows">
+                    <!-- going to inject html using js -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

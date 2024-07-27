@@ -2,18 +2,18 @@
 # Web Field Agent Assessment
 
 ## Tasks
-* [ ] Review the requirements (#.# hours)
+* [x] Review the requirements (1.0 hour)
 
-* [ ] Identify any research that I need to do (#.# hours)
+* [x] Identify any research that I need to do (2.0 hours)
 
 ### Part 1: Project Setup and Agents List
 
-* [ ] Create an `index.html` and `main.js` file as a starting point for your project
+* [x] Create an `index.html` and `main.js` file as a starting point for your project
 
-* [ ] Dislay a list of agents
-  * [ ] Use `fetch` to `GET` a list of agents from the Field Agent API when the website is first loaded
-  * [ ] Use HTML and JavaScript to render the agents array
-  * [ ] Stub out click event handlers for the "Add Agent", "Edit Agent", and "Delete Agent" buttons
+* [x] Dislay a list of agents
+  * [x] Use `fetch` to `GET` a list of agents from the Field Agent API when the website is first loaded
+  * [x] Use HTML and JavaScript to render the agents array
+  * [x] Stub out click event handlers for the "Add Agent", "Edit Agent", and "Delete Agent" buttons
 
 **Commit all changes and push to GitHub**
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Field Agent</title>
+</head>
+<body>
+    <!-- fields of agents here -->
+     <div class="container">
+        <h1>Field Agent</h1>
+
+        <section class="form-container">
+
+        </section>
+
+        <section id="listContainer">
+            <h2>Agents</h2>
+            <button class="btn btn-dark" onclick="handleAddPanel"> Add an Agent</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Middle Name</th>
+                        <th>Last Name</th>
+                        <th>Date of Birth</th>
+                        <th>Height(in)</th>
+                        <th>&nbsp;</th> <!-- space -->
+                    </tr>
+                </thead>
+                <tbody id="tableRows">
+                    <!-- going to inject html using js -->
+                </tbody>
+            </table>
+        </section>
+
+
+
+     </div>
+     <script src="main.js"></script>
+</body>
+</html>
